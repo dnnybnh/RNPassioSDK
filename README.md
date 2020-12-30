@@ -13,7 +13,7 @@ Files Created and Modified:
 
 # TODO:
 * BUG FIXES: When the detection method is triggered, the camera view is frozen.
-** Everything is still working even though the Camera view is frozen. This mean that the detection is still working if the user were to hover it over a logo. The label will also update
+  ** Everything is still working even though the Camera view is frozen. This mean that the detection is still working if the user were to hover it over a logo. The label will also update
 * UI Update: I want to be able to click a back arrow or a cancel button to go back to the previous page or pause the scanning process
 * UI Update: A better UI in general would also be better in order to display the full capability of this App
 
