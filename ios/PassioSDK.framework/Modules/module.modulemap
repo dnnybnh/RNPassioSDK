@@ -1,0 +1,11 @@
+framework module PassioSDK {
+  umbrella header "PassioSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module PassioSDK.Swift {
+    header "PassioSDK-Swift.h"
+    requires objc
+}
