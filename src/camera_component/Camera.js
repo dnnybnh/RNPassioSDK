@@ -52,7 +52,6 @@ const Camera = () => {
             }}
         >
             <RNCamera 
-                ref={cameraRef}
                 style={{
                     height: '100%',
                     width: '100%',

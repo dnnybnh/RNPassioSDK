@@ -30,7 +30,7 @@ class PassioController: RCTEventEmitter{
   
   let passioSDK = PassioSDK.shared
   
-  let passioIDToName = ["LOG0002": "Coca Cola", "LOG0001": "Starbuck" ]
+  let passioIDToName = ["LOG0002": "Coca Cola"] // "LOG0001": "Starbuck" ]
   
   //This is one of the function that is bridged over to React Native to handle configuring the SDK with a KEY value that is input from React Native side.
   @objc
