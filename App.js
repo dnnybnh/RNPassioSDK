@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import PassioScanner from './src/RNPassioSDK/PassioScanner';
+import PassioScanner from './src/PassioSDK/PassioScanner';
 
 const KEY = 'ppGdJa8R0gizAGbhbvrVTtHIB44XH6SWSiuPfhgmlo';
 
