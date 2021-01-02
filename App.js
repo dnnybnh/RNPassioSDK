@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import {
   View,
   Text,
@@ -7,31 +7,19 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import Camera from './src/camera_component/Camera';
+import PassioScanner from './src/RNPassioSDK/PassioScanner';
 
-//Using the NativeModules component of React Native, Javascript is capable of connecting to iOS Native Modules.
-const PassioSDK = NativeModules.PassioController;
 const KEY = 'ppGdJa8R0gizAGbhbvrVTtHIB44XH6SWSiuPfhgmlo';
 
 const App = () => {
+  //Setting the SDK as a ref to be used for function call
+  const passioSDK = useRef();
 
-  //Using useState hook to display the Camera on button Click.
-  const [status, setStatus] = useState(false);
-
-  useEffect(() => {
-    //Using the useEffect hook to configure the SDK with a passed in KEY value
-    PassioSDK.ConfigureSDK(KEY);
-  }, []);
-
-  //This action method is used to display the button
+  //This action method is used to display PassioSDK Scanner
   const onTest = () => {
-    setStatus(!status);
+    //Passing in KEY to configure the SDK and start the scanner
+    passioSDK.current.configureSDK(KEY);
   }
-
-  //This is a functional component that will only display the Camera Component when the status value is true
-  const CameraContent = status ? (
-    <Camera />
-  ) : null;
 
   return (
     <View>
@@ -70,7 +58,7 @@ const App = () => {
           </TouchableOpacity>
         </View>
       </SafeAreaView>
-      {CameraContent}
+      <PassioScanner ref={passioSDK}/>
     </View>
   );
 };
