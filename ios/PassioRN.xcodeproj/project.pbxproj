@@ -20,11 +20,8 @@
 		7788AF7E2840D8BCFE4E6B72 /* libPods-PassioRN-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DED177F7F1CE03D2CA7A984 /* libPods-PassioRN-tvOS.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		95D34D77B8A9E13463FBFF45 /* libPods-PassioRN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EABA3C5EC576CF605F3A00 /* libPods-PassioRN.a */; };
-		D5018C742599F54D0010FC1D /* PassioController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5018C732599F54D0010FC1D /* PassioController.m */; };
 		D57E0B6E25993878003A0E5C /* PassioSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57E0B6D25993835003A0E5C /* PassioSDK.framework */; };
 		D57E0B6F25993878003A0E5C /* PassioSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D57E0B6D25993835003A0E5C /* PassioSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D57E0B7625993965003A0E5C /* PassioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E0B7525993965003A0E5C /* PassioController.swift */; };
-		D5EB615425996E010067AA5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5EB615225996E010067AA5B /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,11 +80,11 @@
 		AAFBED5939A31DD9AA08511C /* Pods-PassioRN-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassioRN-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-PassioRN-tvOS/Pods-PassioRN-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BDFB3BD173F192525E9BFD68 /* libPods-PassioRN-PassioRNTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PassioRN-PassioRNTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C04AB7F1DA68EAD3E1259E72 /* Pods-PassioRN-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassioRN-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-PassioRN-tvOSTests/Pods-PassioRN-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		D5018C732599F54D0010FC1D /* PassioController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PassioController.m; sourceTree = "<group>"; };
 		D57E0B6D25993835003A0E5C /* PassioSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PassioSDK.framework; sourceTree = "<group>"; };
 		D57E0B7425993964003A0E5C /* PassioRN-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PassioRN-Bridging-Header.h"; sourceTree = "<group>"; };
-		D57E0B7525993965003A0E5C /* PassioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassioController.swift; sourceTree = "<group>"; };
-		D5EB615325996E010067AA5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../react_native_coding_exercise/iOSXcode12.0/ExerciseXcode12.0/PassioExercise/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D58005A025A134BF00FF35C9 /* PassioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassioView.swift; sourceTree = "<group>"; };
+		D58005A125A134BF00FF35C9 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		D58005A225A134BF00FF35C9 /* PassioView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PassioView.m; sourceTree = "<group>"; };
 		E38A5A1B8401A219AEE5BD00 /* Pods-PassioRN-PassioRNTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassioRN-PassioRNTests.debug.xcconfig"; path = "Target Support Files/Pods-PassioRN-PassioRNTests/Pods-PassioRN-PassioRNTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -150,7 +147,9 @@
 		13B07FAE1A68108700A75B9A /* PassioRN */ = {
 			isa = PBXGroup;
 			children = (
-				D5EB615225996E010067AA5B /* Main.storyboard */,
+				D58005A125A134BF00FF35C9 /* CameraView.swift */,
+				D58005A225A134BF00FF35C9 /* PassioView.m */,
+				D58005A025A134BF00FF35C9 /* PassioView.swift */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -158,9 +157,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				D57E0B7525993965003A0E5C /* PassioController.swift */,
 				D57E0B7425993964003A0E5C /* PassioRN-Bridging-Header.h */,
-				D5018C732599F54D0010FC1D /* PassioController.m */,
 			);
 			name = PassioRN;
 			sourceTree = "<group>";
@@ -371,7 +368,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5EB615425996E010067AA5B /* Main.storyboard in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
@@ -600,10 +596,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5018C742599F54D0010FC1D /* PassioController.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				D57E0B7625993965003A0E5C /* PassioController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,23 +633,11 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		D5EB615225996E010067AA5B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D5EB615325996E010067AA5B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E38A5A1B8401A219AEE5BD00 /* Pods-PassioRN-PassioRNTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -679,7 +661,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00CBBBB183C95AFB6888DCD7 /* Pods-PassioRN-PassioRNTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = PassioRNTests/Info.plist;
