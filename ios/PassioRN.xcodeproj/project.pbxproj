@@ -20,8 +20,12 @@
 		7788AF7E2840D8BCFE4E6B72 /* libPods-PassioRN-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DED177F7F1CE03D2CA7A984 /* libPods-PassioRN-tvOS.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		95D34D77B8A9E13463FBFF45 /* libPods-PassioRN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EABA3C5EC576CF605F3A00 /* libPods-PassioRN.a */; };
-		D580062325A136CE00FF35C9 /* PassioSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57E0B6D25993835003A0E5C /* PassioSDK.framework */; };
-		D580062425A136CE00FF35C9 /* PassioSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D57E0B6D25993835003A0E5C /* PassioSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D51650D425A1544600EEB1A8 /* PassioSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51650D225A1544600EEB1A8 /* PassioSDK.framework */; };
+		D51650D825A1544D00EEB1A8 /* PassioSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51650D225A1544600EEB1A8 /* PassioSDK.framework */; };
+		D51650D925A1544D00EEB1A8 /* PassioSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D51650D225A1544600EEB1A8 /* PassioSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D516513F25A15D4F00EEB1A8 /* PassioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005A025A134BF00FF35C9 /* PassioView.swift */; };
+		D516514325A15D5300EEB1A8 /* PassioView.m in Sources */ = {isa = PBXBuildFile; fileRef = D58005A225A134BF00FF35C9 /* PassioView.m */; };
+		D516514725A15D5600EEB1A8 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58005A125A134BF00FF35C9 /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +52,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D580062425A136CE00FF35C9 /* PassioSDK.framework in Embed Frameworks */,
+				D51650D925A1544D00EEB1A8 /* PassioSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,7 +84,7 @@
 		AAFBED5939A31DD9AA08511C /* Pods-PassioRN-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassioRN-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-PassioRN-tvOS/Pods-PassioRN-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BDFB3BD173F192525E9BFD68 /* libPods-PassioRN-PassioRNTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PassioRN-PassioRNTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C04AB7F1DA68EAD3E1259E72 /* Pods-PassioRN-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassioRN-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-PassioRN-tvOSTests/Pods-PassioRN-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		D57E0B6D25993835003A0E5C /* PassioSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PassioSDK.framework; sourceTree = "<group>"; };
+		D51650D225A1544600EEB1A8 /* PassioSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PassioSDK.framework; sourceTree = "<group>"; };
 		D57E0B7425993964003A0E5C /* PassioRN-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PassioRN-Bridging-Header.h"; sourceTree = "<group>"; };
 		D58005A025A134BF00FF35C9 /* PassioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassioView.swift; sourceTree = "<group>"; };
 		D58005A125A134BF00FF35C9 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
@@ -103,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D580062325A136CE00FF35C9 /* PassioSDK.framework in Frameworks */,
+				D51650D825A1544D00EEB1A8 /* PassioSDK.framework in Frameworks */,
 				95D34D77B8A9E13463FBFF45 /* libPods-PassioRN.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D51650D425A1544600EEB1A8 /* PassioSDK.framework in Frameworks */,
 				35DDF0C125C1B4820F1151C1 /* libPods-PassioRN-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,7 +170,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D57E0B6D25993835003A0E5C /* PassioSDK.framework */,
+				D51650D225A1544600EEB1A8 /* PassioSDK.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				57EABA3C5EC576CF605F3A00 /* libPods-PassioRN.a */,
@@ -597,7 +602,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				D516514325A15D5300EEB1A8 /* PassioView.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				D516514725A15D5600EEB1A8 /* CameraView.swift in Sources */,
+				D516513F25A15D4F00EEB1A8 /* PassioView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,7 +715,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "PassioRN-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				VALIDATE_WORKSPACE = YES;
+				VALIDATE_WORKSPACE = NO;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -738,7 +746,7 @@
 				PRODUCT_NAME = PassioRN;
 				SWIFT_OBJC_BRIDGING_HEADER = "PassioRN-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				VALIDATE_WORKSPACE = YES;
+				VALIDATE_WORKSPACE = NO;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -810,6 +818,10 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "PassioRN-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -837,6 +849,10 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "PassioRN-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
