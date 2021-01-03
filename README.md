@@ -6,16 +6,13 @@ Couple files were created and modified during the challenge.
 
 Files Created and Modified:
 * App.js
-* Camera.js
-* PassioController.swift
+* PassioScanner.js
+* CameraView.swift
+* PassioView.swift
 * PassioController.m
 * PassioRN-Bridging-Header.h
 
 # TODO:
-* BUG FIXES: When the detection method is triggered, the camera view is frozen.
-* NOTE: Everything is still working even though the Camera view is frozen. This mean that the detection is still working if the user were to hover it over a logo. The label will also update
-* NATIVE VIEW: A potential fix for this bug is propably implement a native view from Swift and bridge it over to React Native
-* THREADING/ASYNC: Another protential fix for this bug is to implement a threading system to have the detection run on a separate thread or have it run asynchronously with the Camera View.
 * UI Update: I want to be able to click a back arrow or a cancel button to go back to the previous page or pause the scanning process
 * UI Update: A better UI in general would also be better in order to display the full capability of this App
 
@@ -38,15 +35,19 @@ Files Created and Modified:
 
 The App.js file was simply modified to connect with the NativeModule in order to configure PassioSDK with a given KEY. A simple UI was also implemented into this file to let user navigate to the scanning screen.
 
-## Camera.js
+## PassioScanner.js
 
-The Camera.js file is a component that was created to connect with th NativeModule in order to start the detection process and listen the logoName value that is given by customDetectionResult method in Swift. In this file, a library called react-native-camera was used in order to display the camera for the scanning process. The component contain a label that will display the logoName that is being listened to by the logoListener event that is passed back by iOS.
+The PassioScanner.js file is a native UI Component that was created to connect with the NativeModule in order to start the detection process and listen the logoName value that is given by customDetectionResult method in Swift.
 
-## PassioController.swift
+## CameraView.swift
 
-This file is the main swift file that is used to execute the minimum required APIS for scanning and detecting a logo. There are two functions that is being exposed to Javascript and that is ConfigureSDK(key:NSString) and startDetection(). Apart from these methods, an event is also being exposed to Javascript via the RCTEventEmitter package, this event is known as the logoListener event 
+This file is where the preview layer is being set up. By using the method of bridging a RCTViewManager, the camera preview screen was able to be exposed to Javascript and used as a Native UI Component.
 
-## PassioController.m
+## PassioView.swift
+
+This file is the main swift file that is used to execute the minimum required APIS for scanning and detecting a logo. There is one function that is being exposed to Javascript and that is ConfigureSDK(key:NSString). When the ConfigureSDK is called with a KEY passed in as parameter, the PassioSDK would configure then immediately start the detection process.
+
+## PassioView.m
 
 This file is used to export the modules, methods and events to Javascript.
 
